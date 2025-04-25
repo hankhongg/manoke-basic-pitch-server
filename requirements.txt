@@ -4,3 +4,4 @@ basic-pitch
 numpy<2.0
 pydub
 python-multipart
+math
