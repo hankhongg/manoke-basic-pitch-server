@@ -75,7 +75,7 @@ async def analyze_pitch(file: UploadFile = File(...)):
         ]
 
         # Group into 5-second windows
-        grouped_pitch_data = group_pitch_data(parsed_data, window_size=5.0)  # Change to 10.0 if you want
+        grouped_pitch_data = group_pitch_data(parsed_data, window_size=10.0)  # Change to 10.0 if you want
 
         return JSONResponse(content={"pitch_data": grouped_pitch_data})
 
